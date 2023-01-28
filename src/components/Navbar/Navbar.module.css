@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  grid-area: n;
+  background-color: #60a8ef;
+  border-radius: 10px;
+  align-items: center;
+  font-size: 18px;
+}
+
+
+
+.item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.item a:hover {
+  color: #5d5454;
+}
+
+.item:first-child {
+  margin-top: 10px;
+}
+
+.item:last-child {
+  margin-top: 30px;
+}

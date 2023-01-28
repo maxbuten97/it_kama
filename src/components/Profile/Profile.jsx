@@ -1,32 +1,27 @@
-import React from 'react';
-import './Profile.css';
+import React from "react";
+import MyPosts from "./MyPosts/MyPosts";
+import classes from "./Profile.module.css";
 const Profile = () => {
-    return (
-        <div className="content">
-        <div>
-          <img
-            className="content__img"
-            src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300"
-            alt="main img"
-          />
-          <div>
-            <img
-              className="avatar"
-              src="https://tinypng.com/images/social/website.jpg"
-              alt="avatar"
-            />{" "}
-            + descr
-          </div>
-          <div>
-            My posts
-            <div>New post</div>
-            <div>post 1</div>
-            <div>post 2</div>
-          </div>
-        </div>
-        Main content
+  return (
+    <div className={classes.content}>
+      <div>
+        <img
+          className={classes.img}
+          src="https://img1.akspic.ru/attachments/crops/8/7/0/7/2/127078/127078-orientir-metropoliya-gorodskoj_pejzazh-gorod-osveshhenie-2560x1440.jpg"
+          alt="main img"
+        />
       </div>
-    );
+      <div>
+        <img
+          className={classes.avatar}
+          src="https://tinypng.com/images/social/website.jpg"
+          alt="avatar"
+        />{" "}
+        + descr
+      </div>
+      <MyPosts />
+    </div>
+  );
 };
 
 export default Profile;
