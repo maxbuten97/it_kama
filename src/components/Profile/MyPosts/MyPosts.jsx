@@ -10,13 +10,15 @@ const MyPosts = () => {
           <textarea
             className={classes.input}
             placeholder="Create your new post"
+            typeof="text"
           ></textarea>
           <div>
             <button className={classes.btn}>Add post</button>
           </div>
         </div>
       </div>
-      <Post />
+      <Post message='Hi, how are you?' likes = '15' />
+      <Post message='Its my first post' likes = '20'/>
     </div>
   );
 };

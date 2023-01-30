@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap");
 * {
-  font-family: 'Kaisei HarunoUmi', serif;
-
-
+  font-family: "Kaisei HarunoUmi", serif;
 }
 
 .app-wrapper {
@@ -10,14 +8,17 @@
   margin: 0 auto;
   display: grid;
   width: 1300px;
-  grid-template-areas: 
-  "h h"
-  "n c";
+  grid-template-areas:
+    "h h"
+    "n c";
   grid-template-rows: 60px 1fr;
   grid-template-columns: 1fr 7fr;
   grid-gap: 5px;
-
 }
 
-
-
+.app-wrapper-content {
+  font-size: 18px;
+  border-radius: 10px;
+  grid-area: c;
+  background-color: #97b7d6;
+}

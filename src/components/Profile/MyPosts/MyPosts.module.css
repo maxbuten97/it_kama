@@ -11,22 +11,21 @@
   resize: none;
   width: 300px;
   border: #81b7ec;
+  outline: none;
 }
-
 
 .posts {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 5px;
 }
 
 .btn {
-    width: 100%;
+  width: 26%;
   transition-duration: 0.4s;
   background-color: #81b7ec;
-  border:1px solid #4a8cce;
-  border-radius: 10px;
+  border: 1px solid #2b81d7;
+  border-radius: 5px;
   cursor: pointer;
 }
 
