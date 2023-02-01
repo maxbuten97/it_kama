@@ -2,10 +2,19 @@ import React from "react";
 import classes from "./MyPosts.module.css";
 import Post from "./Post/Post";
 const MyPosts = () => {
+  const posts = [
+    { id: 1, message: "Hi, how are you?", likesCount: 15 },
+    { id: 2, message: "Its my first post", likesCount: 20 },
+  ];
+
+  let postsElements = posts.map((post) => (
+    <Post message={post.message} likes={post.likesCount} id={post.id} />
+  ));
+
   return (
     <div className={classes.MyPosts}>
-      <div className={classes.posts}>
-        My posts
+      <div className={classes.posts__block}>
+        <h3>My posts</h3>
         <div>
           <textarea
             className={classes.input}
@@ -17,8 +26,7 @@ const MyPosts = () => {
           </div>
         </div>
       </div>
-      <Post message='Hi, how are you?' likes = '15' />
-      <Post message='Its my first post' likes = '20'/>
+      <div className={classes.posts}>{postsElements}</div>
     </div>
   );
 };
