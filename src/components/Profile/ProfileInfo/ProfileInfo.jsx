@@ -6,7 +6,7 @@ const ProfileInfo = () => {
       <div>
         <img
           className={classes.img}
-          src="https://img1.akspic.ru/attachments/crops/8/7/0/7/2/127078/127078-orientir-metropoliya-gorodskoj_pejzazh-gorod-osveshhenie-2560x1440.jpg"
+          src="https://wp-s.ru/wallpapers/10/9/463314880930454/krasivyj-zakat-lesnoe-ozero-gory.jpg"
           alt="main img"
         />
       </div>

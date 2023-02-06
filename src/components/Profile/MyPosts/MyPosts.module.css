@@ -22,7 +22,7 @@
 }
 
 .btn {
-  width: 26%;
+  width: 28%;
   transition-duration: 0.4s;
   background-color: #81b7ec;
   border: 1px solid #2b81d7;
@@ -42,3 +42,4 @@
   padding: 10px;
   margin-top: 10px;
 }
+
