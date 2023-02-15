@@ -3,18 +3,13 @@ import MyPosts from "./MyPosts/MyPosts";
 import classes from "./Profile.module.css";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 const Profile = (props) => {
-  let posts = props.state.posts;
-  let newPostText = props.state.newPostText;
-  let updateNewPostText = props.updateNewPostText;
+  let posts = props.profilePage.posts;
+  let newPostText = props.profilePage.newPostText;
+  let dispatch = props.dispatch;
   return (
     <div>
       <ProfileInfo />
-      <MyPosts
-        posts={posts}
-        addPost={props.addPost}
-        newPostText={newPostText}
-        updateNewPostText={updateNewPostText}
-      />
+      <MyPosts posts={posts} newPostText={newPostText} dispatch={dispatch} />
     </div>
   );
 };

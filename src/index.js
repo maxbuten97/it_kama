@@ -5,14 +5,8 @@ import "./index.css";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
- let rerenderEntireTree = (state) => {
-  root.render(
-    <App
-      state={state}
-      addPost={store.addPost.bind(store)}
-      updateNewPostText={store.updateNewPostText.bind(store)}
-    />
-  );
+let rerenderEntireTree = (state) => {
+  root.render(<App state={state} dispatch={store.dispatch.bind(store)} />);
 };
 
 rerenderEntireTree(store.getState());
